@@ -119,16 +119,14 @@ WSGI_APPLICATION = 'boutique_new.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#       'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://tpmzyfmvrpclmd:538ea6447627557a70854adb8ab7e7a20248be94fde2dd78c6c537d638745481@ec2-54-147-93-73.compute-1.amazonaws.com:5432/dcdc8dvolbse72')
+    'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
+
+
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
